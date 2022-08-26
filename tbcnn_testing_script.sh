@@ -1,6 +1,6 @@
 PARSER=pycparser
-TRAIN_PATH=/home/nghibui/codes/datasets/OJ_${PARSER}_train_test_val/${PARSER}-buckets-train.pkl
-TEST_PATH=/home/nghibui/codes/datasets/OJ_${PARSER}_train_test_val/${PARSER}-buckets-test.pkl
+TRAIN_PATH=OJ104_${PARSER}_train_test_val/${PARSER}-buckets-train.pkl
+TEST_PATH=OJ104_${PARSER}_train_test_val/${PARSER}-buckets-test.pkl
 NODE_TYPE_VOCABULARY_PATH=vocab/${PARSER}/node_type/type.txt
 TOKEN_VOCABULARY_PATH=vocab/${PARSER}/node_token/token.txt
 BATCH_SIZE=32
@@ -14,7 +14,7 @@ NODE_TOKEN_DIM=100
 CONV_OUTPUT_DIM=100
 NUM_CONV=4
 EPOCH=120
-PYTHON=python3
+PYTHON=python
 NODE_INIT=2
 BEST_F1=0.0
 ${PYTHON} test_tbcnn.py \

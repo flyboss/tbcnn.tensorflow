@@ -33,7 +33,6 @@ class DataProcessor():
         self.bucket_sizes = np.array(list(range(30 , 7500 , 10)))
         self.buckets = defaultdict(list)
 
-
         if os.path.exists(self.simple_tree_pkl_path):
             print("Simple trees path exists, loading the pickle....")
             self.trees = pickle.load(open(self.simple_tree_pkl_path, "rb" ))
